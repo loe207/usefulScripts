@@ -1,4 +1,4 @@
-﻿$searchPaths = @("C:\xxx\", "C:\xxx\") #! backslash at the end
+﻿$searchPaths = @("C:\xxx\", "C:\xxx\") #! backslash at the end; number of folders doesn't matter
 
 function searchFolder()
 {
