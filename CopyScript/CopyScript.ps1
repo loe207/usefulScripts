@@ -1,5 +1,5 @@
-﻿$sourceFolder = 'C:\Users\lukas\Lukas\test\'
-$targetFolder = 'C:\Users\lukas\Lukas\testCopyTo\'
+﻿$sourceFolder = 'C:\xxx'
+$targetFolder = 'C:\xxx'
 
 $copyoptions = "/MIR"
 $command = "robocopy `"$($sourceFolder)`" $($targetFolder) $copyOptions"
