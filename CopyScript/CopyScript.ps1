@@ -5,7 +5,7 @@ $copyoptions = "/MIR"
 $command = "robocopy `"$($sourceFolder)`" $($targetFolder) $copyOptions"
 $output = Invoke-Expression $command
 
-$fsw = New-Object IO.FileSystemWatcher $sourceFolder -Property @{IncludeSubdirectories = $true;NotifyFilter = [IO.NotifyFilters]'FileName, DirectoryName, CreationTime, LastWrite'}
+$fsw = New-Object IO.FileSystemWatcher $sourceFolder -Property @{IncludeSubdirectories = $true}
      
 Register-ObjectEvent $fsw Changed -SourceIdentifier FileChanged -Action { 
     $name = $Event.SourceEventArgs.Name 
