@@ -1,5 +1,5 @@
-﻿$sourceFolder = 'C:\xxx'
-$targetFolder = 'C:\xxx'
+﻿$sourceFolder = 'C:\xxx\' #! backslash at the end
+$targetFolder = 'C:\xxx\' #! backslash at the end
 
 $copyoptions = "/MIR"
 $command = "robocopy `"$($sourceFolder)`" $($targetFolder) $copyOptions"
